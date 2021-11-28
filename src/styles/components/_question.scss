@@ -1,0 +1,21 @@
+img {
+  width: 6rem;
+  height: 3.86rem;
+  align-self: flex-start;
+  margin-bottom: 1.57rem;
+  box-shadow: $shadow;
+  border-radius: 0.43rem;
+  -webkit-border-radius: 0.43rem;
+  -moz-border-radius: 0.43rem;
+  -ms-border-radius: 0.43rem;
+  -o-border-radius: 0.43rem;
+}
+.question {
+  font-family: $font-1;
+  font-weight: 700;
+  font-size: 1.71rem;
+  line-height: 2.57rem;
+  color: $blue;
+  align-self: flex-start;
+  margin-bottom: 2.21rem;
+}

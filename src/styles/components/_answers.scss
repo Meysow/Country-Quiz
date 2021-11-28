@@ -1,0 +1,134 @@
+.answers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.71rem;
+  margin-bottom: 1.63rem;
+
+  .answer {
+    position: relative;
+    width: 100%;
+    padding: 0.57rem 3rem 0.57rem 1.36rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid $purple;
+    border-radius: $borderRadius-2;
+    -webkit-border-radius: $borderRadius-2;
+    -moz-border-radius: $borderRadius-2;
+    -ms-border-radius: $borderRadius-2;
+    -o-border-radius: $borderRadius-2;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+
+    .letter {
+      text-transform: uppercase;
+      font-family: $font-1;
+      font-weight: 500;
+      font-size: 1.71rem;
+      line-height: 2.57rem;
+      color: $purple;
+      margin-right: 2.71rem;
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+    }
+
+    input {
+      width: 0;
+    }
+
+    label {
+      font-family: $font-1;
+      font-weight: 500;
+      font-size: 1.29rem;
+      color: $purple;
+      cursor: pointer;
+
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+    }
+
+    &:hover {
+      border: 2px solid $orange;
+      background-color: $orange;
+
+      .letter {
+        color: $white;
+      }
+
+      label {
+        color: $white;
+      }
+    }
+
+    &.incorrect {
+      border: 2px solid $red;
+      background-color: $red;
+      .letter {
+        color: $white;
+      }
+
+      label {
+        color: $white;
+      }
+
+      .validate__icon {
+        position: absolute;
+        top: 52%;
+        right: 1rem;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        svg {
+          position: unset;
+          color: $white;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+    &.correct {
+      border: 2px solid $green;
+      background-color: $green;
+      .letter {
+        color: $white;
+      }
+
+      label {
+        color: $white;
+      }
+
+      .validate__icon {
+        position: absolute;
+        top: 52%;
+        right: 1rem;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        svg {
+          position: unset;
+          color: $white;
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.untargetable {
+  pointer-events: none;
+}
